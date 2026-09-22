@@ -1,25 +1,18 @@
-# Argus AI Studio
+# ARGUS AI Studio — AI Delivery Operating Model
 
-A Vue 3 + Vite rebuild of the Argus AI Studio landing page.
+A responsive Vue 3 + Vite website that presents ARGUS as an AI delivery operating model and demonstrates the thinking behind it from a Forward Deployed Engineering perspective.
 
 ## Project structure
 
 ```
-argus-ai-studio-vue/
+argusaistudio/
 ├── index.html              # Vite entry HTML (loads fonts, mounts #app)
 ├── package.json
 ├── vite.config.js
 ├── src/
 │   ├── main.js              # App bootstrap
-│   ├── App.vue               # Root component, assembles sections
-│   ├── style.css             # Design tokens + global styles
-│   └── components/
-│       ├── TheHeader.vue
-│       ├── HeroSection.vue
-│       ├── ToolsSection.vue      # tools list is data-driven — edit the array
-│       ├── AboutSection.vue      # founders list is data-driven — edit the array
-│       ├── ContactSection.vue    # contact links are data-driven — edit the array
-│       └── TheFooter.vue
+│   ├── App.vue               # Content, interactions and page sections
+│   └── style.css             # Design system and responsive styling
 ```
 
 ## Setup
@@ -52,15 +45,11 @@ Preview the production build locally:
 npm run preview
 ```
 
-## Editing content
+## Before launch
 
-- **Tools**: edit the `tools` array in `src/components/ToolsSection.vue`
-- **Founders**: edit the `founders` array in `src/components/AboutSection.vue`
-- **Contact links**: edit the `contacts` array in `src/components/ContactSection.vue`
-- **Colors/fonts**: edit the CSS variables at the top of `src/style.css`
-
-Placeholder emails, LinkedIn, and GitHub links use `argusaistudio.com` /
-`argusaistudio` — swap these for your real ones before launch.
+- Replace `EMAIL_PLACEHOLDER`, `LINKEDIN_PLACEHOLDER` and `RESUME_PLACEHOLDER` in `src/App.vue`.
+- Review sanitized capability stories before making them public.
+- Add a downloadable CV only after removing private contact and employer-confidential information.
 
 ## Hosting
 
