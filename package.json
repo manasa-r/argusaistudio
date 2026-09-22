@@ -1,0 +1,18 @@
+{
+  "name": "argus-ai-studio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "preview:file": "node scripts/render-preview.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^6.0.9",
+    "vite": "^8.3.0",
+    "vue": "^3.5.43"
+  },
+  "devDependencies": {}
+}
